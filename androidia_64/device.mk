@@ -248,13 +248,21 @@ PRODUCT_PACKAGES += \
     libva-tpi \
     i965_drv_video
 
+PRODUCT_PACKAGES += \
+    libmfxhw32 \
+    libmfxhw64 \
+    libmfx_omx_core \
+    libmfx_omx_components_hw \
+    libstagefrighthw
+
 # Audio/video codec support.
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     device/intel/android_ia/common/media/media_profiles.xml:system/etc/media_profiles.xml \
-    device/intel/android_ia/common/media/media_codecs.xml:system/etc/media_codecs.xml
+    device/intel/android_ia/common/media/media_codecs.xml:system/etc/media_codecs.xml \
+    device/intel/android_ia/common/media/mfx_omxil_core.conf:system/etc/mfx_omxil_core.conf
 
 #Enable deep buffer for video playback
 PRODUCT_PROPERTY_OVERRIDES += media.stagefright.audio.deep=true

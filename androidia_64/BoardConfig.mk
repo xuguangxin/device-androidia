@@ -25,9 +25,14 @@ USE_OPENGL_RENDERER := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 USE_INTEL_UFO_DRIVER := false
 INTEL_VA := true
+BUILD_WITH_FULL_STAGEFRIGHT := true
 BOARD_GRAPHIC_IS_GEN := true
 BOARD_GPU_DRIVERS := i965
 BOARD_USE_MESA := true
+
+# Settings for the Media SDK library and plug-ins:
+# - USE_MEDIASDK: use Media SDK support or not
+USE_MEDIASDK := true
 
 # System's VSYNC phase offsets in nanoseconds
 VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
